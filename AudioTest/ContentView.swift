@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import AppKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button(action:{
+            setSystemVolume(0.5)
+        }){
+            Text("设置音量为50%")
         }
-        .padding()
     }
 }
 
